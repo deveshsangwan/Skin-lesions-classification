@@ -19,3 +19,4 @@ The following CNN models are used:
 * Resnet
 * VGG
 * Xception
+* Ensemble
