@@ -15,8 +15,20 @@ Dataset link https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
 
 ## Model Training
 The following CNN models are used:
-* Inception
-* Resnet
-* VGG
+* InceptionV3
+* Resnet152
+* VGG19
 * Xception
 * Ensemble
+
+## Results
+| Model | Accuracy |
+| ----- | -------- |
+| InceptionV3 | 0.862 |
+| Resnet152 | 0.802 |
+| VGG19 | 0.835 |
+| Xception | 0.862 |
+| Ensemble | 0.875 |
+
+## Conclusion
+Out of all the algorithms used, Ensemble of Xception, Resnet152, InceptionV3 gives the best accuracy of 0.8753.
