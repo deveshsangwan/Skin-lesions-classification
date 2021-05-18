@@ -1,0 +1,5 @@
+# Don't track content of these folders
+/__pycache__
+
+# Compiled source #
+*.h5
