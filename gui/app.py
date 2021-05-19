@@ -72,18 +72,20 @@ def predict():
 
         # Make prediction
         preds = model_predict(img, model)
-        y_class = preds.argmax(axis=-1)
+        print(preds)
+        y_class = np.argmax(preds) 
+        print(y_class)
         lesion_type = [
+            'Actinic keratoses',
+            'Basal cell carcinoma',
+            'Benign keratosis-like lesions ',
+            'Dermatofibroma',
             'Melanocytic nevi',
             'Melanoma',
-            'Benign keratosis-like lesions ',
-            'Basal cell carcinoma',
-            'Actinic keratoses',
-            'Vascular lesions',
-            'Dermatofibroma'
+            'Vascular lesions'
         ]
 
-        result = str(lesion_type[y_class[0]])               # Convert to string
+        result = str(lesion_type[y_class])               # Convert to string
         
         # Serialize the result, you can add additional fields
         return jsonify(result=result)
