@@ -11,7 +11,7 @@ Dataset includes images of following 7 skin lesions:
 * melanocytic nevi (nv) 
 * vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage, vasc)
 
-Dataset link https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
+[Dataset link](https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000)
 
 ## Model Training
 The following CNN models are used:
